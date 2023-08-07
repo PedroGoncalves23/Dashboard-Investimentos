@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BEM-VINDO AO DASHBOARD</h1>
+
+    <div class="container">
+        <div class="saldo">
+            <div class="txt">
+                SALDO
+            </div>
+            <div class="valor">
+                R$0.00
+            </div>
+        </div>
+
+        <div class="rentabilidade">
+            <div class="txt">
+                RENTABILIDADE
+            </div>
+            <div class="valor">
+                0%
+            </div>
+        </div>
+
+        <div class="ganhos">
+            <div class="txt">
+                GANHOS
+            </div>
+            <div class="valor">
+                R$0.00
+            </div>
+        </div>
+    </div>
+
+    <div class="add">
+        <!-- <button class="addInvestiment"><a href="">NOVO INVESTIMENTO</a></button> -->
+        <button  class="addInvestiment" data-toggle="modal" data-target="#modalExemplo">
+            NOVO INVESTIMENTO
+        </button>
+    </div>
+    <!-- Botão para acionar modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form" method="POST">
+            <select name="select" id="tipo">
+                <option value="AÇÃO">AÇÃO</option>
+                <option value="FLLS">FLLS</option>
+                <option value="CDB">CDB</option>
+                <option value="LCI e LCA">LCI e LCA</option>
+                <option value="ETFs">ETFs</option>
+              </select> 
+            <!-- TIPO: <input type="text" name="" id="tipo"> -->
+            ATIVO: <input type="text" name="" id="ativo">
+            COTAS: <input type="text" name="" id="cotas">
+            VALOR: <input type="text" name="" id="valor">  
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button  class="btn btn-primary">Salvar</button>
+            </div>
+            <!-- <button>ENVIAR</button> -->
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dados">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>TIPO</th>
+                <th>ATIVO</th>
+                <th>COTAS</th>
+                <th>VALOR UN</th>
+                <th>VALOR TOTAL</th>
+            </tr>
+        </thead>
+        <tbody id="res">
+            <!-- As linhas de tabela serão adicionadas aqui dinamicamente pelo JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

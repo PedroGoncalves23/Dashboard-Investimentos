@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(55, 50, 50);
+    height: 100vh;
+}
+
+h1{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.saldo, .rentabilidade, .ganhos{
+    background-color: rgb(215, 215, 215);
+    width: 28%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.valor{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.table{
+    background-color: rgb(215, 215, 215);
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 65%;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.addInvestiment{
+    background-color: #009879;
+    border-radius: 10px;
+    border: 1px solid;
+    height: 40px;
+    width: 15%;
+}
+
+.addInvestiment a{
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content {
+    background-color: #9bb1ae;
+}
